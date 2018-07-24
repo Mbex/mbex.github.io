@@ -62,12 +62,13 @@ This produced two datasets (nodes.csv and links.csv) that I am free to tweak in 
 
 # Result
 
-Using the TreeModel, adding some highlighting functionality and a TreeExpanderButton, the mechanism can be visualised, simplified and highlighted to show nearest neighbours. I've also got a nice dataset that I can query and use elsewhere in my analysis.
+Using the TreeModel, adding some highlighting functionality and a TreeExpanderButton, the mechanism can be visualised, simplified and highlighted to show nearest neighbours. I've also got a nice dataset that I can query and use elsewhere in my analysis. The code can be found [here][code].
 
 [gojs]: https://gojs.net/latest/index.html
 [mcm]: http://mcm.leeds.ac.uk/MCM/
 [pybel]: http://openbabel.org/docs/dev/UseTheLibrary/Python_PybelAPI.html
 [smiles]: https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system
+[code]: https://github.com/Mbex/ChemSchemVis
 
 <br>
 # Diagram
