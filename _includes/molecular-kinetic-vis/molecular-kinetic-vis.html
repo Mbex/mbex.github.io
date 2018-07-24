@@ -1,5 +1,4 @@
  <script src="http://d3js.org/d3.v3.min.js"></script>
-
  <script>
 
     balls = []; // global array representing balls
@@ -224,11 +223,11 @@
                     return false;
             }, 500);
             startStopFlag = 1;
-            document.getElementById('startStop').innerHTML = 'Stop';
+            // document.getElementById('startStop').innerHTML = 'Stop';
         }
         else {
             startStopFlag = null;
-            document.getElementById('startStop').innerHTML = 'Start';
+            // document.getElementById('startStop').innerHTML = 'Start';
         }
     }
     // I always like to handle ESC key
@@ -294,7 +293,6 @@
       console.log("Number of Balls: ", balls.length);
     }
 </script>
-
 <div id="mainDiv">
     <div id="drawAreaOuter" style="width:100%; height:100%;  ">
       <div id="drawArea" style="width:100%; height:100%; border:1px solid gray;"></div>
