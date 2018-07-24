@@ -1,4 +1,3 @@
-<body>
 <script>
 
 balls = []; // global array representing balls
@@ -230,16 +229,6 @@ function StartStopGame() {
         // document.getElementById('startStop').innerHTML = 'Start';
     }
 }
-// I always like to handle ESC key
-d3.select('body')
-        .on('keydown', function () {
-            if (balls.length == 0)
-                return;
-            console.log(d3.event);
-            if (d3.event.keyCode == 27) { // if ESC key - toggle start stop
-                StartStopGame();
-            }
-        });
 
 
 function OnSpeedChange(val) {
@@ -315,4 +304,3 @@ function OnNumberOfBallsChanged(val) {
 var svg = Initialize('drawArea');
 StartStopGame();
 </script>
-</body>
