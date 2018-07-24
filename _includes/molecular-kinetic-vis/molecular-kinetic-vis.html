@@ -10,7 +10,6 @@
     speedLimFactor = 0.5;
     var startStopFlag = null;
 
-
     // Ball object - multiple balls can be created by instantiating new objects
     function Ball(svg, x, y, id, color, aoa, weight) {
 
@@ -101,6 +100,7 @@
             thisobj.Draw();
         }
     }
+
     function CheckCollision(ball1, ball2) {
         var absx = Math.abs(parseFloat(ball2.posX) - parseFloat(ball1.posX));
         var absy = Math.abs(parseFloat(ball2.posY) - parseFloat(ball1.posY));
@@ -113,6 +113,7 @@
         }
         return false;
     }
+
     //courtsey thanks to several internet sites for formulas
     //detect collision, find intersecting point and set new speed+direction for each ball based on weight (weight=radius)
     function ProcessCollision(ball1, ball2) {
@@ -149,6 +150,7 @@
             ball2.Draw();
         }
     }
+
     function Initialize(containerId) {
 
         // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
@@ -181,7 +183,7 @@
             .attr("y", 0)
             .attr("width", width)
             .attr("height", height)
-            .style("fill", "none")
+            .style("fill", "none");
         //.attr("transform", "translate(" + 1 + "," + 1 + ")")
         ;
         for (var i = 0; i < InitialNBalls; ++i) {
@@ -200,6 +202,7 @@
         }
         return svg;
     }
+
     function StartStopGame() {
         if (startStopFlag == null) {
             d3.timer(function () {
@@ -220,6 +223,7 @@
             startStopFlag = null;
         }
     }
+
     function OnSpeedChange(val) {
       var vxBar = [];
       var vyBar = [];
@@ -247,6 +251,7 @@
         }
       }
     }
+
     function OnNumberOfBallsChanged(val) {
         if (val == "+"){
           if (balls.length < ballLimit){
@@ -270,6 +275,7 @@
         }
       console.log("Number of Balls: ", balls.length);
     }
+
 </script>
 
 <div id="mainDiv">
