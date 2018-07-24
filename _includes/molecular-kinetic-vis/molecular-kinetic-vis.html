@@ -1,3 +1,5 @@
+ <script src="http://d3js.org/d3.v3.min.js"></script>
+
  <script>
 
     balls = []; // global array representing balls
@@ -46,19 +48,10 @@
         }
         this.Draw = function () {
             var svg = thisobj.svg;
-            var ball = svg.selectAll('#' + thisobj.id)
-                        .data(thisobj.data)
-                    ;
-            ball.enter()
-                .append("circle")
-                .attr({"id" : thisobj.id, 'class' : 'ball', 'r' : thisobj.radius, 'weight' : thisobj.weight})
-                .style("fill", thisobj.color)
-                ;
-            ball
-                //.transition()//.duration(50)
-                .attr("cx", thisobj.posX)
-                .attr("cy", thisobj.posY)
-            ;
+            var ball = svg.selectAll('#' + thisobj.id).data(thisobj.data);
+            ball.enter().append("circle").style("fill", thisobj.color)
+                .attr({"id" : thisobj.id, 'class' : 'ball', 'r' : thisobj.radius, 'weight' : thisobj.weight});
+            ball.attr("cx", thisobj.posX).attr("cy", thisobj.posY);
         }
         this.Move = function () {
             var svg = thisobj.svg;
