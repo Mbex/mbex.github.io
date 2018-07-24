@@ -8,6 +8,7 @@
     ballLimit = InitialNBalls * 2.5;
     radius = 15;
     speedLimFactor = 0.5;
+    var startStopFlag = null;
 
 
     // Ball object - multiple balls can be created by instantiating new objects
@@ -208,7 +209,6 @@
         }
         return svg;
     }
-    var startStopFlag = null;
     function StartStopGame() {
         if (startStopFlag == null) {
             d3.timer(function () {
@@ -229,17 +229,6 @@
             startStopFlag = null;
         }
     }
-    // I always like to handle ESC key
-    d3.select('body')
-            .on('keydown', function () {
-                if (balls.length == 0)
-                    return;
-                console.log(d3.event);
-                if (d3.event.keyCode == 27) { // if ESC key - toggle start stop
-                    StartStopGame();
-                }
-            });
-
 
     function OnSpeedChange(val) {
       var vxBar = [];
