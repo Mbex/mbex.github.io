@@ -5,6 +5,8 @@ date: 2018-07-24 09:25:00 +0100
 author: Mike
 ---
 
+<script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+
 I always had this idea of making an interactive teaching aid that shows molecules moving in a box in order to demonstrate different aspects of chemistry and physics e.g. [the kinetic theory of gasses][ktog] or [the ideal gas law][igl]. 
 
 It's an important subject taught throughout [school][school] that requires linking mental visualisations to some abstract scientific concepts. An interactive tool would no doubt be engaging and encouraging to those struggling to learning this subject.
