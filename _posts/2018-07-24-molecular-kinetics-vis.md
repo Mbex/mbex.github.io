@@ -33,7 +33,7 @@ As a bonus, the interactive itself is quite hypnotic, so on a big screen it attr
 
 For the moment this is all quantitative, although it would be really great if  thermodynamic and kinetic properties were displayed and could be changed, for instance displaying statistical properties of the molecules e.g. the [Maxwell–Boltzmann distribution][mbd].
 
-I can imagine dragging and dropping the boundary of the box to change the pressure and speed of the molecules within, or adding in a heated surface to watch a temperature gradient. Chemical reactions between the species would also be a good way of demonstrating gaseous reactions. Actually, introducing a liquid layer could also show concepts such as equilibrium vapour pressure, or saturation vapour pressure. Endless possibilities! Hopefully I get a change to incorporate some of these aspects to this demo in the near future. 
+I can imagine dragging and dropping the boundary of the box to change the pressure and speed of the molecules within, or adding in a heated surface to watch a temperature gradient. Chemical reactions between the species would also be a good way of demonstrating gaseous reactions. Actually, introducing a liquid layer could also show concepts such as equilibrium vapour pressure, or saturation vapour pressure. Endless possibilities! Hopefully I get a chance to incorporate some of these aspects to this demo in the near future. 
 
 [igl]: https://en.wikipedia.org/wiki/Ideal_gas_law
 [school]: http://www.bbc.co.uk/schools/gcsebitesize/science/aqa/heatingandcooling/heatingrev2.shtml
