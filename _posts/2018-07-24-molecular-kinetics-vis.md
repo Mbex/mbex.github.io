@@ -3,8 +3,13 @@ layout: post
 title: Molecular kinetics visualisation
 date: 2018-07-24 09:25:00 +0100
 author: Mike
+js:
+- "http://d3js.org/d3.v3.min.js"
 ---
-<script src="http://d3js.org/d3.v3.min.js"></script>
+
+{% for javascript in page.js %}
+    <script src="{{ javascript }}"></script>
+{% endfor %}
 
 I always had this idea of making an interactive teaching aid that shows molecules moving in a box in order to demonstrate different aspects of chemistry and physics e.g. [the kinetic theory of gasses][ktog] or [the ideal gas law][igl]. 
 
