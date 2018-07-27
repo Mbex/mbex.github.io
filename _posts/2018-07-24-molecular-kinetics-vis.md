@@ -3,13 +3,12 @@ layout: post
 title: Molecular kinetics visualisation
 date: 2018-07-24 09:25:00 +0100
 author: Mike
-js:
-- "http://d3js.org/d3.v3.min.js"
+custom-js:
+- https://d3js.org/d3.v3.min.js
+- "{{ base.url | prepend: site.url }}/assets/molecule-kinetics/mv.js"
 ---
-
-{% for javascript in page.js %}
-    <script src="{{ javascript }}"></script>
-{% endfor %}
+<!-- <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+<script src="{{ base.url | prepend: site.url }}/assets/molecule-kinetics/mv.js"></script> -->
 
 I always had this idea of making an interactive teaching aid that shows molecules moving in a box in order to demonstrate different aspects of chemistry and physics e.g. [the kinetic theory of gasses][ktog] or [the ideal gas law][igl]. 
 
@@ -32,7 +31,6 @@ I came across [this example of bouncing balls][atul] with some interactivity, wh
       <button type="button" onclick="OnNumberOfBallsChanged('+')" value="+">+</button>
       </div>
     </div>
-<script src="{{ base.url | prepend: site.url }}/assets/molecule-kinetics/mv.js"></script>
 <br><br><br>
 
 As a bonus, the interactive itself is quite hypnotic, so on a big screen it attracts attention which is perfect for engagement events. This display was used during Science Uncovered Manchester European Researchers Night at Manchester Museum 2017 where demonstrators could talk about a number of concepts such as; the conservation of energy; molecular reactions; activation energy; pressure, temperature and volume; kinetic energy; adiabatic processes; diffusion. The list is endless really!
@@ -46,3 +44,7 @@ I can imagine dragging and dropping the boundary of the box to change the pressu
 [ktog]: https://en.wikipedia.org/wiki/Kinetic_theory_of_gases
 [atul]: http://bl.ocks.org/atul-github/0019158da5d2f8499f7f
 [mbd]: https://en.wikipedia.org/wiki/Maxwell%E2%80%93Boltzmann_distribution
+
+{% for js in page.customjs %}
+<script async type="text/javascript" src="{{ js }}"></script>
+{% endfor %}
