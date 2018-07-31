@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Portfolio
+title: Mike Priestley
 email: michael.priestley@manchester.ac.uk
 description: A collection of code snippets and projects with a focus on atmospheric science, physical chemistry and technology in general.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -26,6 +26,8 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+sass:
+    style: compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
