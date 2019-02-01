@@ -87,7 +87,7 @@ This indicates an incorrect argument has been passed to the r function. Typicall
 
 Below is an example showing the openair pollutionRose function which is used to find the direction and frequency of a particular pollutant.
 
-![figure.png]({{ "/assets/rpy_openair/figure.PNG" | absolute_url }})
+![figure.png]({{ "/assets/rpy_openair/figure1.png" | absolute_url }})
 
 
 
